@@ -1,0 +1,4 @@
+interface:
+  display_name: "Specsfy - Especialista - Versionamento Mobile"
+  short_description: "Versionamento SEMVER sincronizado com Android, iOS, Flutter e React Native"
+  default_prompt: "Use $specsfy-specialist-versioning para orientar esta tarefa com padrões e validação especializados."

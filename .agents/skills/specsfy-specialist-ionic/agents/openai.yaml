@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - Ionic & Capacitor"
+  short_description: "Aplicativos híbridos com Ionic Framework, Capacitor Bridge e Plugins Nativos"
+  default_prompt: "Use $specsfy-specialist-ionic para orientar esta tarefa com padrões e validação especializados."
+

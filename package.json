@@ -1,0 +1,21 @@
+{
+  "name": "specsfy-mobile",
+  "version": "1.0.0",
+  "description": "Specsfy Mobile (Antigravity Edition) — Spec-Driven Development para Android, iOS, Flutter, React Native, Ionic, KMP, CMP e Supabase.",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/A97Reis/specsfy-mobile.git"
+  },
+  "bin": {
+    "specsfy-mobile": "./scripts/install-mobile.mjs"
+  },
+  "scripts": {
+    "install:mobile": "node ./scripts/install-mobile.mjs",
+    "verify": "node ./.agents/skills/specsfy-04-validate/scripts/verify_repo.mjs ."
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

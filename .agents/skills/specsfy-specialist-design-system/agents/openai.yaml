@@ -1,0 +1,4 @@
+interface:
+  display_name: "Specsfy - Especialista - Design System Mobile"
+  short_description: "Regras macro de interface mobile (Material 3 & Apple HIG), tokens e fluxos em DESIGNSYSTEM.MD"
+  default_prompt: "Use $specsfy-specialist-design-system para orientar esta tarefa com padrões e validação especializados."

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - Persistência Local Mobile"
+  short_description: "Bancos embarcados (Room, SQLDelight, Drift, SwiftData), migrations seguras e Offline-First"
+  default_prompt: "Use $specsfy-specialist-mobile-persistence para orientar esta tarefa com padrões e validação especializados."
+

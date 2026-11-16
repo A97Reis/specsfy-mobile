@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - Release & Deploy Mobile"
+  short_description: "Assinatura de código, builds AAB/IPA, Fastlane, Play Console, TestFlight e Staged Rollout"
+  default_prompt: "Use $specsfy-specialist-mobile-deploy para orientar esta tarefa com padrões e validação especializados."
+

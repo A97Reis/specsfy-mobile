@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - Kotlin Multiplatform (KMP)"
+  short_description: "Lógica compartilhada Android e iOS em commonMain com Ktor, Coroutines e SKIE"
+  default_prompt: "Use $specsfy-specialist-kmp para orientar esta tarefa com padrões e validação especializados."
+

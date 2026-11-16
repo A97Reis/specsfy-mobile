@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - Firebase Mobile"
+  short_description: "Firebase em apps móveis: FCM Push, Crashlytics, Remote Config, Auth e Firestore"
+  default_prompt: "Use $specsfy-specialist-firebase para orientar esta tarefa com padrões e validação especializados."
+

@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "specsfy-specialist-android",
+      "description": "Android Nativo: Kotlin, Jetpack Compose, Material 3, ViewModel, StateFlow, Navigation Compose, Hilt/Koin, Lifecycle e Room.",
+      "category": "mobile",
+      "tags": ["android", "kotlin", "compose", "material3", "mobile"],
+      "detect": {
+        "files": ["build.gradle.kts", "build.gradle", "AndroidManifest.xml", "src/main/AndroidManifest.xml"],
+        "dependencies": ["androidx.compose.ui:ui", "androidx.core:core-ktx", "com.android.application"]
+      }
+    },
+    {
+      "name": "specsfy-specialist-ios",
+      "description": "iOS Nativo: Swift 6, SwiftUI, Apple HIG, Swift Concurrency, NavigationStack, SPM, CocoaPods e SwiftData.",
+      "category": "mobile",
+      "tags": ["ios", "swift", "swiftui", "apple", "mobile"],
+      "detect": {
+        "files": ["Package.swift", "Podfile", "Info.plist"],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-flutter",
+      "description": "Flutter: Dart 3, Widgets imutáveis, Riverpod, BLoC, GoRouter, Temas Material 3 e Cupertino, Drift e testes.",
+      "category": "mobile",
+      "tags": ["flutter", "dart", "cross-platform", "mobile"],
+      "detect": {
+        "files": ["pubspec.yaml"],
+        "dependencies": ["flutter", "flutter_riverpod", "flutter_bloc"]
+      }
+    },
+    {
+      "name": "specsfy-specialist-react-native",
+      "description": "React Native: TypeScript, New Architecture, Expo SDK, Expo Router, React Navigation, NativeWind, FlashList e RNTL.",
+      "category": "mobile",
+      "tags": ["react-native", "expo", "typescript", "mobile"],
+      "detect": {
+        "files": ["app.json", "app.config.ts", "app.config.js"],
+        "dependencies": ["react-native", "expo"]
+      }
+    },
+    {
+      "name": "specsfy-specialist-ionic",
+      "description": "Ionic & Capacitor: TypeScript, Componentes Ion*, Temas Material/Cupertino, Plugins Nativos e WebView tuning.",
+      "category": "mobile",
+      "tags": ["ionic", "capacitor", "hybrid", "mobile"],
+      "detect": {
+        "files": ["ionic.config.json", "capacitor.config.ts", "capacitor.config.json"],
+        "dependencies": ["@ionic/core", "@ionic/react", "@ionic/vue", "@ionic/angular", "@capacitor/core"]
+      }
+    },
+    {
+      "name": "specsfy-specialist-kmp",
+      "description": "Kotlin Multiplatform (KMP): Arquitetura compartilhada em commonMain, expect/actual, Ktor Client, Coroutines e Koin.",
+      "category": "mobile",
+      "tags": ["kmp", "kotlin", "multiplatform", "mobile"],
+      "detect": {
+        "files": ["src/commonMain", "src/androidMain", "src/iosMain"],
+        "dependencies": ["org.jetbrains.kotlin.multiplatform", "kotlinMultiplatform"]
+      }
+    },
+    {
+      "name": "specsfy-specialist-cmp",
+      "description": "Compose Multiplatform (CMP): UI unificada Android/iOS em commonMain, composeResources, Material 3 e compose-preview.",
+      "category": "mobile",
+      "tags": ["cmp", "compose", "multiplatform", "kotlin", "mobile"],
+      "requires": ["specsfy-specialist-kmp"],
+      "detect": {
+        "files": ["src/commonMain/composeResources"],
+        "dependencies": ["org.jetbrains.compose", "composeMultiplatform"]
+      }
+    },
+    {
+      "name": "specsfy-specialist-supabase",
+      "description": "Supabase: Postgres, Auth, Row Level Security (RLS), Storage, Realtime e Edge Functions para clientes mobile e backend.",
+      "category": "backend",
+      "tags": ["supabase", "postgres", "auth", "rls", "database", "mobile"],
+      "detect": {
+        "files": ["supabase/config.toml"],
+        "dependencies": ["@supabase/supabase-js", "supabase_flutter", "supabase-kt", "supabase-swift"]
+      }
+    },
+    {
+      "name": "specsfy-specialist-firebase",
+      "description": "Firebase Mobile: Auth, Firestore, Cloud Functions, Cloud Messaging (FCM), Crashlytics e App Distribution.",
+      "category": "backend",
+      "tags": ["firebase", "google", "fcm", "crashlytics", "mobile"],
+      "detect": {
+        "files": ["google-services.json", "GoogleService-Info.plist", "firebase.json"],
+        "dependencies": ["firebase", "firebase_core", "@react-native-firebase/app"]
+      }
+    },
+    {
+      "name": "specsfy-specialist-mobile-persistence",
+      "description": "Persistência Local Mobile: Room, SQLDelight, Drift, SwiftData, CoreData, WatermelonDB, DataStore e Migrations com SQLite.",
+      "category": "data",
+      "tags": ["database", "sqlite", "room", "drift", "sqldelight", "offline-first", "mobile"],
+      "detect": {
+        "files": [],
+        "dependencies": ["androidx.room", "app.cash.sqldelight", "drift", "watermelon-db"]
+      }
+    },
+    {
+      "name": "specsfy-specialist-design-system",
+      "description": "Design System Mobile: Regras macro de interface para aplicativos baseadas em Material Design 3 e Apple HIG em DESIGNSYSTEM.MD.",
+      "category": "design",
+      "tags": ["design-system", "material3", "apple-hig", "mobile", "ui"],
+      "detect": {
+        "files": ["DESIGNSYSTEM.MD"],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-interface-experience",
+      "description": "Experiência de Interface Mobile: Mapeamento de telas, fluxos de navegação, formulários, ciclo de vida e tarefas de UI.",
+      "category": "design",
+      "tags": ["ui", "ux", "mobile", "screens", "navigation"],
+      "requires": ["specsfy-specialist-design-system"],
+      "detect": {
+        "files": ["INTERFACE.md"],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-ui-design",
+      "description": "UI Design Mobile: Layouts adaptativos (smartphones, tablets, dobráveis), Safe Area, WindowInsets e micro-interações.",
+      "category": "design",
+      "tags": ["ui", "layout", "mobile"],
+      "requires": ["specsfy-specialist-design-system"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-ux-design",
+      "description": "UX Design Mobile: Arquitetura de informação móvel, fluxos sem fricção, permissões contextuais do SO e estados vazios.",
+      "category": "design",
+      "tags": ["ux", "flows", "mobile"],
+      "requires": ["specsfy-specialist-design-system"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-mobile-accessibility",
+      "description": "Acessibilidade Mobile: TalkBack, VoiceOver, alvos de toque mínimos (48dp/44pt), Dynamic Type/Font Scaling e contraste.",
+      "category": "quality",
+      "tags": ["accessibility", "talkback", "voiceover", "wcag", "mobile"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-versioning",
+      "description": "Versionamento Mobile: SEMVER na raiz sincronizado com versionCode/versionName (Android), build/version (iOS) e app.json.",
+      "category": "operations",
+      "tags": ["semver", "release", "versioning", "mobile"],
+      "detect": {
+        "files": ["SEMVER"],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-mobile-deploy",
+      "description": "Release & Deploy Mobile: Assinatura fora do Git (Keystore/Match), AAB/APK/IPA, Google Play Console, TestFlight e Staged Rollout.",
+      "category": "operations",
+      "tags": ["deploy", "release", "fastlane", "play-store", "app-store", "mobile"],
+      "requires": ["specsfy-specialist-versioning"],
+      "detect": {
+        "files": ["Fastfile", "fastlane/Fastfile", "Appfile"],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-software-architecture",
+      "description": "Arquitetura de Software Mobile: Clean Architecture, MVVM, MVI, modularização por feature e fronteiras de domínio.",
+      "category": "architecture",
+      "tags": ["architecture", "mvvm", "mvi", "clean-architecture", "mobile"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-code-review",
+      "description": "Revisão técnica de código mobile por contrato, testes, concorrência, vazamentos de memória e integridade de UI.",
+      "category": "engineering",
+      "tags": ["review", "quality", "diff", "mobile"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-debugging",
+      "description": "Diagnóstico de bugs, crash logs, ANRs, memory leaks e regressões intermitentes em ambientes mobile.",
+      "category": "engineering",
+      "tags": ["debugging", "crash", "diagnosis", "mobile"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-domain-modeling",
+      "description": "Modelagem de domínio, linguagem ubíqua, invariantes e boundaries em projetos mobile.",
+      "category": "engineering",
+      "tags": ["ddd", "domain", "modeling"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-technical-research",
+      "description": "Pesquisa técnica estruturada e rastreável sobre APIs móveis, bibliotecas nativas e restrições de plataforma.",
+      "category": "engineering",
+      "tags": ["research", "evidence", "documentation", "mobile"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-prototyping",
+      "description": "Protótipos descartáveis (spikes) para validar viabilidade de gestos, bibliotecas nativas ou integrações em mobile.",
+      "category": "engineering",
+      "tags": ["prototype", "spike", "experiment", "mobile"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-gitflow",
+      "description": "Gitflow para Mobile: Branches de release, feature, hotfix e ciclo de publicação coordenado com aprovações nas lojas.",
+      "category": "engineering",
+      "tags": ["git", "gitflow", "branching", "mobile"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "specsfy-specialist-merge-conflict-resolution",
+      "description": "Resolução de conflitos Git em manifests, schemas e códigos mobile preservando intenção e integridade de build.",
+      "category": "engineering",
+      "tags": ["git", "merge", "rebase"],
+      "detect": {
+        "files": [],
+        "dependencies": []
+      }
+    }
+  ]
+}

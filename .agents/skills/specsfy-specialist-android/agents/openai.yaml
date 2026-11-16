@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - Android Nativo"
+  short_description: "Android nativo com Kotlin, Jetpack Compose, Material 3 e Arquitetura Jetpack"
+  default_prompt: "Use $specsfy-specialist-android para orientar esta tarefa com padrões e validação especializados."
+

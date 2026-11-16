@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - React Native & Expo"
+  short_description: "React Native e Expo em TypeScript com Expo Router, FlashList, Reanimated e RNTL"
+  default_prompt: "Use $specsfy-specialist-react-native para orientar esta tarefa com padrões e validação especializados."
+

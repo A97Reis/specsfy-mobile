@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - iOS Nativo"
+  short_description: "iOS nativo com Swift 6, SwiftUI, Apple HIG e Swift Concurrency"
+  default_prompt: "Use $specsfy-specialist-ios para orientar esta tarefa com padrões e validação especializados."
+

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - Compose Multiplatform (CMP)"
+  short_description: "UI declarativa compartilhada para Android e iOS com Compose Multiplatform"
+  default_prompt: "Use $specsfy-specialist-cmp para orientar esta tarefa com padrões e validação especializados."
+

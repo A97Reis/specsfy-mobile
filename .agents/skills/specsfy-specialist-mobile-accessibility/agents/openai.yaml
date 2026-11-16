@@ -1,0 +1,5 @@
+interface:
+  display_name: "Specsfy - Especialista - Acessibilidade Mobile"
+  short_description: "Acessibilidade mobile com TalkBack, VoiceOver, alvos de toque (48dp/44pt) e Dynamic Type"
+  default_prompt: "Use $specsfy-specialist-mobile-accessibility para orientar esta tarefa com padrões e validação especializados."
+
